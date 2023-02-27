@@ -1,0 +1,75 @@
+.header{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space--etween;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 46px;
+    padding-left: 15px;
+    padding-right: 15px;
+    &-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__tel{
+        list-style: none;
+        text-decoration: none;
+        color: $gray;
+        transition: 0.3s ease;
+        font-weight: 500;
+        letter-spacing: 0.075rem;
+        &:hover{
+            color: $orange;
+        }
+    }
+}
+.header-cart{
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 80px;
+    &__button{
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: $orange;
+        border: none;
+        border-radius: 100%;
+        background-image: url(../../../img/cart.png);
+        background-size: 1rem 0.87rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &__count{
+        position: absolute;
+        top: 6px;
+        right: 9px;
+        font-size: 0.5rem;
+        color: $white;
+    }
+}
+.logo{
+    display: block;
+    background-repeat: no-repeat;
+    background-image:url(../../../img/logo.svg) ;
+    width: 120px;
+    height: 32px;
+    margin-right: 120px;
+}
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    &-item{
+        margin-right: 48px;
+    }
+    &-link{
+        text-decoration: none;
+        color: $gray;
+        transition: 0.3s ease;
+        &:hover{
+            color: $orange;
+        }
+    }
+}
